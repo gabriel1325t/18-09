@@ -4,8 +4,8 @@ module.exports = class controllerNumbers{
 
         if(typeof numero !=="number"){
             return res.status(400).json({message:"Não é numero"})
+        }
 
-    }
 
         if (numero % 2 == 0){
             return res.status(200).json({message: "Número Par!"});
